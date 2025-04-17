@@ -8,5 +8,5 @@ push!(LOAD_PATH,cpath*"quantum-correlations/src/steerability/");
 using Ket
 using MultiStates
 using Entanglement
-print(1- EntanglementRobustness( MultiState(Matrix(state_w(Complex{Float64}, 4)),fill(2,4)), method = "BP", silent = false))
+print(1- EntanglementRobustness( MultiState(Matrix(state_w(Complex{Float64}, 5)),fill(2,5)), method = "BP", silent = false))
 
